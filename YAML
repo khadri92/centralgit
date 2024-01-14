@@ -1,0 +1,85 @@
+What is YAML?
+YAML stands for YAML Ain't Markup Language, but it originally stood for Yet Another Markup Language.
+
+YAML is a human-readable data serialization language, just like XML and JSON.
+
+Serialization is a process where one application or service that has different data structures and is written in a different set of technologies can transfer data to another application using a standard format.
+
+In other words, serialization is about translating, converting, and wrapping up a data structure in another format.
+
+The data in the new format can be stored in a file or transmitted to another application or service over a network.
+
+YAML is a widely used format for writing configuration files for different DevOps tools, programs, and applications because of its human-readable and intuitive syntax.
+
+XML VS JSON VS YAML - What's The Difference?
+XML, JSON, and YAML are all used for creating configuration files and transferring data between applications.
+
+Each language has its advantages and disadvantages.
+
+Now, let's see some of the characteristics of the three languages. You will also see an example of how the same code is written in each language to demonstrate the high-level differences in their syntax.
+
+XML
+XML, which stands for Extensible Markup Language, was first introduced in 1996 and was designed for general-purpose use.
+
+XML is a generalized markup language. It offers a structured yet flexible syntax and a defined document schema. This makes it a good choice when working with complex configurations that require a structured format and finer control over schema validation to ensure configurations always have the correct format.
+
+With that said, XML's syntax can be verbose, redundant, and harder to read in comparison with other serialization languages.
+
+<Employees>
+    <Employee> 
+        <name> John Doe </name>
+        <department> Engineering </department>
+        <country> USA </country>
+    </Employee>
+     <Employee> 
+        <name> Kate Kateson </name>
+        <department> IT Support </department>
+        <country> United Kingdom </country>
+    </Employee>
+</Employees>
+JSON
+JSON stands for JavaScript Object Notation and has been around since the early 2000s.
+
+JSON was initially inspired by the JavaScript programming language, but it is not tied to only one language. Instead, it is a language-independent format.
+
+Most modern programming languages have libraries for parsing and generating JSON data.
+
+JSON offers a much more readable, human-friendly, compact, and simple syntax compared to XML. It makes for a great format for storing and transferring information between web applications and servers over a network.
+
+With that said, it may not offer the best support for complex configurations.
+
+{
+	"Employees": [
+    {
+			"name": "John Doe",
+			"department": "Engineering",
+			"country": "USA"
+		},
+
+		{
+			"name": "Kate Kateson",
+			"department": "IT support",
+			"country": "United Kingdom"
+		}
+	]
+}
+YAML
+YAML, originally known as Yet Another Markup Language, was created in 2001 but now stands for YAML Ain't Markup Language.
+
+YAML is an official strict superset of JSON despite looking very different from JSON.
+
+YAML can do everything that JSON can and more. A valid YAML file can contain JSON, and JSON can transform into YAML.
+
+YAML has the most human-readable, intuitive, and compact syntax for defining configurations compared to XML and JSON.
+
+YAML uses indentation to define structure in the file, which is helpful if you are used to writing Python code and are familiar with the indentation style the language uses.
+
+With that said, if you don't get the indentation and format right, it can lead to validation errors, making it not the friendliest for beginners.
+
+Employees:
+- name: John Doe
+  department: Engineering
+  country: USA
+- name: Kate Kateson
+  department: IT support
+  country: United Kingdom
